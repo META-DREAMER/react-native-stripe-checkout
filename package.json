@@ -1,6 +1,7 @@
 {
   "name": "react-native-stripe-checkout",
   "version": "0.0.11",
+  "license": "MIT",
   "description": "Cross Platform React Native component which mimics Stripe's iOS components. Supports selecting payment method and adding card manually or using the camera.",
   "keywords": [
     "react-native",
@@ -13,7 +14,7 @@
   ],
   "homepage": "https://github.com/hammadj/react-native-stripe-checkout",
   "private": false,
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "peerDependencies": {
     "react": "^15.1.0",
     "react-native": "^0.28.0"
@@ -33,12 +34,13 @@
     "react": "~15.3.0"
   },
   "devDependencies": {
-    "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-cli": "^6.22.2",
     "babel-eslint": "^6.0.0",
     "babel-plugin-transform-class-properties": "^6.5.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react-native": "^1.5.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "babel-preset-stage-1": "^6.3.13",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^7.0.0",
@@ -47,12 +49,14 @@
     "eslint-plugin-react": "^4.3.0",
     "estraverse-fb": "^1.3.1",
     "nodemon": "^1.9.1",
-    "react-native-cli": "^0.1.10"
+    "react-native-cli": "^0.1.10",
+    "rimraf": "^2.5.4"
   },
   "scripts": {
     "lint_js": "eslint src --ext=js --ext=jsx",
     "lint": "npm run lint_js",
     "lint:watch": "nodemon --exec \"npm run lint\"",
-    "ci": "npm run lint"
+    "ci": "npm run lint",
+    "build": "rimraf lib && babel ./src -d lib"
   }
 }
