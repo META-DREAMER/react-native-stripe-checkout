@@ -88,7 +88,7 @@ export default class AddCard extends Component {
   }
 
   render() {
-    const styles = _.merge({}, defaultStyles, this.props.styles)
+    const styles = _.merge({}, defaultStyles(this.props.styles), this.props.styles)
     const calculatedState = this.calculatedState()
     if (calculatedState.addingCard) {
       return (

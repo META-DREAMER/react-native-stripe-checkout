@@ -1,6 +1,15 @@
-import { bold, grey, pressableColor, touchableOpacityContainer, innerTouchableOpacityContainer } from '../../common/styles'
+import * as commonStyles from '../../common/styles'
 
-export default ({
+const defaultStyles = ({
+  bold = commonStyles.bold,
+  grey = commonStyles.grey,
+  darkGrey = commonStyles.darkGrey,
+  accentColor = commonStyles.accentColor,
+  touchableOpacityContainer = commonStyles.touchableOpacityContainer,
+  innerTouchableOpacityContainer = commonStyles.innerTouchableOpacityContainer,
+}) => ({
+  touchableOpacityContainer: touchableOpacityContainer,
+  innerTouchableOpacityContainer: innerTouchableOpacityContainer,
   addButton: {
     ...touchableOpacityContainer,
     marginTop: 20,
@@ -10,36 +19,50 @@ export default ({
     borderColor: grey,
   },
   addButtonText: {
-    color: pressableColor,
-    fontWeight: bold,
-    textAlign: 'center',
+    color: accentColor,
+  },
+  addButtonIcon: {
+    marginRight: 16,
   },
   applePayContainer: {
     marginLeft: 10,
   },
   cardBrandImage: {
-    marginRight: 8,
+    marginRight: 8
   },
-  touchableOpacityContainer: touchableOpacityContainer,
   cardsLoadingIndicator: {
     marginBottom: 20,
     marginTop: 20,
   },
   cardTextLast4: {
-    fontWeight: bold
+    fontWeight: bold,
   },
   cardTextEndingIn: {
-    marginRight: 4,
+    fontWeight: '400',
   },
   cardTextType: {
     fontWeight: bold,
-    marginRight: 4,
+  },
+  cardText: {
+    color: '#3c3c3c'
+  },
+  cardTextSelected: {
+    color: accentColor
+  },
+  accentTint: {
+    tintColor: accentColor
+  },
+  greyTint: {
+    tintColor: darkGrey
+  },
+  selectedContainer: {
+    flex: 1,
+    alignItems: 'flex-end'
   },
   cardTextContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  innerTouchableOpacityContainer: innerTouchableOpacityContainer,
   innerTouchableOpacityContainerLast: {
     borderBottomWidth: 0,
   },
@@ -59,5 +82,6 @@ export default ({
     flex: 1,
     backgroundColor: '#F2F2F5',
   },
+});
 
-})
+export default defaultStyles;
