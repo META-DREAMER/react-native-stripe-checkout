@@ -1,8 +1,16 @@
 {
   "name": "react-native-stripe-checkout",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Cross Platform React Native component which mimics Stripe's iOS components. Supports selecting payment method and adding card manually or using the camera.",
-  "keywords": ["react-native", "react", "stripe", "checkout", "payment", "native", "form"],
+  "keywords": [
+    "react-native",
+    "react",
+    "stripe",
+    "checkout",
+    "payment",
+    "native",
+    "form"
+  ],
   "homepage": "https://github.com/hammadj/react-native-stripe-checkout",
   "private": false,
   "main": "src/index.js",
