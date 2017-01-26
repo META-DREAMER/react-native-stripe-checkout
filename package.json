@@ -6,8 +6,14 @@
   "homepage": "https://github.com/hammadj/react-native-stripe-checkout",
   "private": false,
   "main": "src/index.js",
+  "peerDependencies": {
+    "react": "^15.1.0",
+    "react-native": "^0.28.0"
+  },
   "dependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "lodash": "^4.14.2",
+    "payment": "^2.1.3",
     "react-native-awesome-card-io": "^0.4.0",
     "react-native-keyboard-spacer": "^0.3.0",
     "payment": "^2.1.3",
@@ -19,6 +25,7 @@
     "react": "~15.3.0"
   },
   "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "babel-eslint": "^6.0.0",
     "babel-plugin-transform-class-properties": "^6.5.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
