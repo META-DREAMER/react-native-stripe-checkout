@@ -4,5 +4,4 @@ lib/
 npm-debug.log*
 build
 .DS_Store
-lib/
 .idea
