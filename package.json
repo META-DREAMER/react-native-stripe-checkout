@@ -1,6 +1,6 @@
 {
   "name": "react-native-stripe-checkout",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "description": "Cross Platform React Native component which mimics Stripe's iOS components. Supports selecting payment method and adding card manually or using the camera.",
   "keywords": [
