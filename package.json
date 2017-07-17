@@ -14,7 +14,7 @@
   ],
   "homepage": "https://github.com/hammadj/react-native-stripe-checkout",
   "private": false,
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "peerDependencies": {
     "lodash": "^4.14.2",
     "react": "~15.3.0",
